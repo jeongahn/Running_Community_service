@@ -1,6 +1,6 @@
 # running_app
 
-A new Flutter project.
+러닝 커뮤니티 앱 서비스
 
 ## Getting Started
 
