@@ -2,14 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:running_app/theme.dart';
 
+import '../../models/product.dart';
+import 'components/product_item.dart';
+
 class CommunityScreen extends StatefulWidget {
   @override
   _CommunityScreenState createState() => _CommunityScreenState();
 }
 
 class _CommunityScreenState extends State<CommunityScreen> {
-  String _selectedLocation = '성북구';
+  String _selectedLocation = '서울';
   List<String> _locations = [
+    '서울',
     '성북구',
     '동대문구',
     '노원구',
@@ -74,7 +78,20 @@ class _CommunityScreenState extends State<CommunityScreen> {
           child: Divider(thickness: 0.5, color: Colors.grey),
         ),
       ),
-      body: Container(),
+      body: ListView.separated(
+        separatorBuilder: (context, index) => const Divider(
+          height: 0,
+          indent: 16,
+          endIndent: 16,
+          color: Colors.grey,
+        ),
+        itemBuilder: (context, index) {
+          return ProductItem(
+            product: productList[index],
+          );
+        },
+        itemCount: productList.length,
+      ),
     );
   }
 

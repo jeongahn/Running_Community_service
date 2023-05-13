@@ -5,6 +5,9 @@ import 'package:running_app/screens/Market/Market_screen.dart';
 import 'package:running_app/screens/my_profile/my_profile_screen.dart';
 import 'package:running_app/screens/Community/Community_screen.dart';
 import 'package:running_app/screens/record_leaderBoard/record_leaderBoard_screen.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:typicons_flutter/typicons_flutter.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class MainScreens extends StatefulWidget {
   @override
@@ -42,15 +45,15 @@ class _MainScreensState extends State<MainScreens> {
         },
         items: [
           const BottomNavigationBarItem(
-              label: '커뮤니티', icon: Icon(Icons.groups_outlined)),
+              label: '커뮤니티', icon: Icon(Typicons.group_outline)),
           const BottomNavigationBarItem(
-              label: '마켓', icon: Icon(Icons.local_grocery_store_outlined)),
+              label: '마켓', icon: Icon(Typicons.shopping_cart)),
           const BottomNavigationBarItem(
               label: '프로필', icon: Icon(CupertinoIcons.person_circle)),
           const BottomNavigationBarItem(
-              label: '챌린지', icon: Icon(Icons.emoji_events_outlined)),
+              label: '챌린지', icon: Icon(FontAwesomeIcons.medal)),
           const BottomNavigationBarItem(
-              label: '리더보드', icon: Icon(Icons.score_outlined)),
+              label: '리더보드', icon: Icon(FontAwesomeIcons.clipboardList)),
         ],
       ),
     );
