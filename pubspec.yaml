@@ -28,6 +28,9 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+
+  flutter_native_splash: ^2.2.7
+
   flutter:
     sdk: flutter
   
@@ -44,6 +47,7 @@ dependencies:
   intl: ^0.17.0 # DateFormat, NumberFormat 등 다양한 기능 제공
   typicons_flutter : ^0.5.0
   flutter_svg: ^1.0.1
+  auto_size_text: ^3.0.0 # 적응형 텍스트
 
 dev_dependencies:
   flutter_launcher_icons: "^0.9.2"
@@ -71,6 +75,22 @@ flutter:
   assets:
     - assets/icons/
     - assets/image/
+    - assets/Images/dino.png
+    - assets/Images/2.png
+    - assets/Images/3.png
+    - assets/Images/4.png
+    - assets/Images/5.png
+    - assets/Images/6.png
+    - assets/Images/7.png
+    - assets/Images/8.png
+    - assets/Images/9.png
+    - assets/Images/10.png
+    - assets/Images/11.png
+    - assets/Images/12.png
+    - assets/Images/13.png
+    - assets/Images/14.png
+    - assets/Images/coin.jpg
+
   #   - assets/nike_logo.png
   # To add assets to your application, add an assets section, like this:
   # assets:

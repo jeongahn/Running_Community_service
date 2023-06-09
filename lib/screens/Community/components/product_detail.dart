@@ -16,7 +16,7 @@ class ProductDetail extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(product.title, style: textTheme().bodyText1),
+          Text(product.title, style: textTheme().bodyLarge),
           const SizedBox(height: 4.0),
           Text('${product.address} • ${product.publishedAt}'),
           const SizedBox(height: 4.0),

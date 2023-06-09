@@ -35,7 +35,7 @@ class StoreItem extends StatelessWidget {
                     children: [
                       TextSpan(
                           text: '${recommendStore.storeName} ',
-                          style: textTheme().headline1),
+                          style: textTheme().displayLarge),
                     ],
                   ),
                 ),
@@ -44,7 +44,7 @@ class StoreItem extends StatelessWidget {
                   '${recommendStore.description}',
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
-                  style: textTheme().subtitle1,
+                  style: textTheme().titleMedium,
                 ),
                 const SizedBox(height: 8),
                 Text.rich(
@@ -55,7 +55,7 @@ class StoreItem extends StatelessWidget {
                           style: TextStyle(fontSize: 15, color: Colors.blue)),
                       TextSpan(
                         text: ' • 관심 ${recommendStore.likeCount}',
-                        style: textTheme().subtitle1,
+                        style: textTheme().titleMedium,
                       ),
                     ],
                   ),
@@ -65,7 +65,7 @@ class StoreItem extends StatelessWidget {
           ),
           Expanded(
             child: Container(
-              margin: const EdgeInsets.only(left: 16, right: 16, bottom: 16),
+              margin: const EdgeInsets.only(left: 16, right: 16, bottom: 9),
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
                   color: Colors.grey[200],
@@ -74,7 +74,7 @@ class StoreItem extends StatelessWidget {
                 TextSpan(
                   children: [
                     TextSpan(
-                        text: '${recommendStore.commentUser},',
+                        text: '${recommendStore.commentUser}',
                         style: TextStyle(
                             fontSize: 13,
                             color: Colors.black,
