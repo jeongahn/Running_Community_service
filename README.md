@@ -1,6 +1,11 @@
 # running_app
 
-러닝 커뮤니티 앱 서비스
+아이디어 : 러닝 기반 Reality-meta bridge service
+
+전반적인 프론트 코드 구현
+
+팀장 : 장정안
+팀원 : 차예찬, 박상찬
 
 ## Getting Started
 
